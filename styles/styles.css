@@ -4,12 +4,14 @@
 	src: url('../fonts/GveretLevin/GveretLevinAlefAlefAlef-Regular.woff') format('woff'),
          url('../fonts/GveretLevin/GveretLevinAlefAlefAlef-Regular.ttf')  format('truetype');
 }
-
+html.inner-page {
+	min-height: 100vh;
+	position: relative;
+}
 body {
 	direction: rtl;
 	color: #122d28;
 	font-size: 14px;
-	background-color: black;
 	font-family: 'Heebo', sans-serif;
 }
 ul {
@@ -24,6 +26,9 @@ h1 {
 	text-align: center;
 	font-family: 'GveretLevin';
 	text-shadow: 2px 2px rgba(0,0,0,.25);
+}
+b {
+	font-weight: 700;
 }
 .nav-wrapper {
 	background-color: #e6f4f4;
@@ -101,6 +106,23 @@ h1 {
 	position: relative;
 	text-align: center;
 	background-color: #e6f4f4;
+}
+.breadcrumbs {
+	margin-top: 24px;
+}
+.breadcrumbs li {
+	float: right;
+	font-weight: 300;
+	font-size: 1.8rem;
+}
+.breadcrumbs li a {
+	color: #122d28;
+}
+.breadcrumbs .current {
+	font-weight: 400;
+}
+.crumb-separator {
+	margin: 0 6px;
 }
 
 /* slider */
@@ -197,6 +219,53 @@ h1 {
 	position: relative;
 	background-color: white;
 }
+.secondary-navigation.carousel {
+	margin-bottom: 10%;
+}
+.secondary-navigation.carousel .container {
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+}
+.secondary-navigation.carousel ul {
+	margin: 0;
+	width: 2160px;
+	display: block;
+	transition: all .3s;
+	transform: translateX(0);
+}
+.secondary-navigation.carousel ul li {
+	float: right;
+	width: 240px;
+	height: 240px;
+}
+.carousel-arrow-right,
+.carousel-arrow-left {
+	top: 100px;
+	width: 36px;
+	height: 48px;
+	z-index: 999;
+	cursor: pointer;
+	position: absolute;
+	text-align: center;
+	display: inline-block;
+	background-color: white;
+}
+.carousel-arrow-right {
+	right: 0;
+}
+.carousel-arrow-left {
+	left: 0;
+}
+.carousel-arrow-right img,
+.carousel-arrow-left img {
+	margin-top: 6px;
+	max-height: 80%;
+	display: inline-block;
+}
+.carousel-arrow-right img {
+	transform: rotate(180deg);
+}
 .secondary-navigation-title {
     left: 50%;
     font-size: 2rem;
@@ -270,6 +339,26 @@ h1 {
 }
 .secondary-navigation ul li.lightgray {
 	overflow: hidden;
+}
+
+.text-content {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding-right: 4rem;
+}
+.text-content p {
+	font-size: 1.75rem;
+}
+.section-heading {
+	margin: 2rem 0;
+	font-size: 4rem;
+	text-align: center;
+}
+html.inner-page footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	position: absolute;
 }
 footer {
 	text-align: center;

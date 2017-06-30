@@ -55,4 +55,18 @@ $( document ).ready(function() {
     	}
     })
 
+    /* accordion */
+    var accordionTitle = $(".accordion-title");
+
+    accordionTitle.on("click", function() {
+    	var accordion = $(this).closest(".accordion");
+    	if(accordion.hasClass("closed")) {
+    		accordion.removeClass("closed");
+    		accordion.find(".accordion-content").slideDown();
+    	} else {
+	    	accordion.addClass("closed");
+	    	accordion.find(".accordion-content").slideUp();
+    	}
+    })
+
 });

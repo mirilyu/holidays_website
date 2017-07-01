@@ -260,7 +260,7 @@ b {
 	position: absolute;
 	background-color: rgba(75,75,75,.4);
 }
-.not-allowed:hover * {
+.not-allowed:hover, .not-allowed:hover * {
 	cursor: not-allowed !important;
 }
 .holiday-page .carousel li.active,

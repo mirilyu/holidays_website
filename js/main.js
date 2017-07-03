@@ -56,8 +56,12 @@ $( document ).ready(function() {
     })
 
     /* accordion */
+    if (window.location.hash == "#section2") {
+        $("#section2").removeClass("closed");
+        $("#section2 .accordion-content").slideDown();
+    }
     var accordionTitle = $(".accordion-title");
-
+    
     accordionTitle.on("click", function() {
     	var accordion = $(this).closest(".accordion");
     	if(accordion.hasClass("closed")) {

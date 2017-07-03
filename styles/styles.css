@@ -60,6 +60,9 @@ b {
 	line-height: 42px;
 	padding-right: 20px;
 }
+.nav-wrapper ul.level-1.wide{
+    width: 130%;
+}
 .nav-wrapper li.level-1:hover {
 	background-color: #f4b9b2;
 }
@@ -370,6 +373,7 @@ b {
 }
 .secondary-navigation ul li.lightgray {
 	overflow: hidden;
+    flex: 3;
 }
 
 .text-content {
@@ -468,15 +472,18 @@ html.inner-page footer {
 	color: #202020;
 }
 .big-btn {
-	height: 64px;
-	color: white; 
-	width: 600px;
-	display: block;
-	line-height: 64px;
-	margin: 3% auto 11%;
-	text-align: center;
-	font-size: 2rem;
-	box-shadow: 0 1px 1px 0 rgba(0,0,0,.3);
+    height: 64px;
+    color: white;
+    width: 600px;
+    display: block;
+    line-height: 64px;
+    margin: 3% auto 11%;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.3);
+    background-image: url('../images/play-button.png');
+    background-repeat: no-repeat;
+    background-position: 20px 6px;
 }
 .inforgraphics {
 	width: 700px;
@@ -569,6 +576,26 @@ html.inner-page footer {
 .inforgraphics .steps span:nth-child(5) {
 	top: 20px;
 	position: relative;
+}
+img.hit-logo {
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+p.faculty {
+    text-align: center;
+    margin: 0;
+}
+label {
+    display: block;
+}
+input {
+    width: 250px;
+    margin-bottom: 16px;
+}
+textarea {
+    width: 250px;
+    height:120px;
 }
 footer {
 	text-align: center;

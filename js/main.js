@@ -1,6 +1,18 @@
 $( document ).ready(function() {
 
+	/* accessibility */
+	$(".acessibility-btn").on("click", function() {
+		$("h1, .secondary-navigation").toggleClass("accesibility-text-contrast");
+		$("html").toggleClass("accessibility-font-size");
+	})
+
 	/* banner slider */
+	$("body").keydown(function(e) {
+	  if(e.keyCode == 37 || e.keyCode == 39) { // left or right
+	    $(".arrow-r").click();
+	  }
+	});
+
     var arrowBtn = $(".arrows li");
     var slides = $(".slide");
 

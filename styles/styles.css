@@ -30,6 +30,26 @@ h1 {
 b {
 	font-weight: 700;
 }
+.accessibility-font-size {
+	font-size: 11px;
+}
+.acessibility-btn {
+	right: 0;
+	top: 100px;
+	width: 72px;
+	height: 72px;
+	position: fixed;
+	background-color: black;
+	z-index: 9999;
+	box-shadow: 0 0 4px 1px rgba(0,0,0,.3);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url('../images/accessibility.png');
+}
+.accesibility-text-contrast,
+.accesibility-text-contrast * {
+	color: #202020 !important;
+}
 .nav-wrapper {
 	background-color: #e6f4f4;
 }
@@ -52,7 +72,9 @@ b {
 
 	display: none;	
 }
-.nav-wrapper li.level-0:hover > ul.level-1 {
+.nav-wrapper li.level-0:hover > ul.level-1,
+.nav-wrapper li.level-0:active > ul.level-1,
+.nav-wrapper li.level-0:focus > ul.level-1 {
 	display: block;
 }
 .nav-wrapper li.level-1 {
@@ -236,6 +258,9 @@ b {
 	display: block;
 	transition: all .3s;
 	transform: translateX(0);
+}
+.page-pesakh .secondary-navigation.carousel ul {
+	transform: translateX(1200px);
 }
 .secondary-navigation.carousel ul li {
 	float: right;
